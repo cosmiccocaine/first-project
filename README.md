@@ -116,6 +116,7 @@ $ git commit -m 'Мой первый коммит!'
 
 ```bash
 $ git log
+$ git log --oneline (одной строкой, сокращенно)
 ```
 
 ## Генерация SSH (keygen)
