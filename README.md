@@ -1,5 +1,13 @@
 # Полезные команды для работы в консоли
 
+## Изменение редактора в консоли
+Notepad++, на 64-битной ОС:
+
+```bash
+git config --global core.editor \
+"'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
+
 ## Навигация по строке в консоли
 
 - Перейти в начало строки: `Ctrl + A` (Windows, macOS, Linux).
@@ -94,7 +102,7 @@ $ git init
 $ git status
 ```
 
-## Разгитить (удаление папки "rm")
+## Разгитить (удаление файла "rm" или папки "rm -rf")
 
 ```bash
 $ rm -rf .git # удалили подпапку .git
@@ -110,6 +118,27 @@ $ git add --all
 
 ```bash
 $ git commit -m 'Мой первый коммит!'
+```
+
+## Добавление в тот же коммит (commit amend)
+
+```bash
+$ git add common.css # добавили файл common.css в список на коммит как обычно
+$ git commit --amend --no-edit
+```
+
+## Изменение в том же коммите (commit amend)
+
+```bash
+$ git add main.html # добавили в список на коммит
+$ git commit --amend --no-edit 
+```
+
+## Изменение сообщения в том же коммите (commit amend -m)
+
+```bash
+$ git commit --amend -m "Добавить главную страницу и стили"
+$ git log --oneline 
 ```
 
 ## История коммитов (log)
