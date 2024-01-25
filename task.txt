@@ -1,3 +1,7 @@
 Добрый вечер, ночь или все сразу!
 Penis
+<<<<<<< HEAD
 Внес изменения, для проверки!!
+=======
+PEEEEEEEEEEEEEEEEEEENIIIIIISSS!!!
+>>>>>>> d316f87ed1717fb5aa2b260f2647607bbff6655d
