@@ -206,7 +206,7 @@ $ git push -u origin master
 
 ## Откат изменений (restore)
 ```bash
-$ git restore --staged <file>
+$ git restore --staged example.txt # Команда переведёт файл из staged обратно в modified или untracked
 ```
 
 ## Откат всей папки (restore)
@@ -216,5 +216,15 @@ $ git restore --staged .
 
 ## Откат коммита (reset)
 ```bash
-$ git reset --hard <commit hash>
+$ git reset --hard b576d89 # Команда «откатит» историю до коммита с хешем b576d89. Более поздние коммиты потеряются!
+```
+
+## Откат изменений в файле (restore)
+```bash
+$ git restore example.txt # Команда «откатит» изменения в файле до последней сохранённой (в коммите или в staging) версии.
+```
+
+## Различия в коммитах (diff)
+```bash
+$ git diff 96aa6ee aaa2508 # Показывает подробные изменения в указанных коммитах
 ```
